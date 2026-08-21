@@ -30,7 +30,7 @@ Secure publishing requires verified POSIX directory-descriptor and no-follow pri
 4. Write the body-only Markdown draft to the cache beside the ledger, for example `<video-id>.blog-body.md`, using `write_file`.
 5. Follow `references/blog-output.md` exactly.
 6. Render the ledger source block into the body and run strict citation verification before publishing. If verification fails, do not touch the vault.
-7. Write a JSON request file beside the body with these keys: `vault`, `ledger`, `video_id`, `title`, `description`, `canonical_url`, `thread_id`, `source_count`, `transcript_status`, and `tags`.
+7. Write a JSON request file beside the body with these keys: `vault`, `ledger`, `video_id`, `title`, `description`, `canonical_url`, `thread_id`, `source_count`, `transcript_status`, and `tags`. `transcript_status` must be exactly one of `available`, `unavailable`, or `language-not-verified`; when transcript text exists but the retrieval tool did not return language metadata, use `language-not-verified`.
 
 The request file avoids shell option and command injection from titles, descriptions, and tags. Create it with `write_file`; never build it by shell interpolation.
 

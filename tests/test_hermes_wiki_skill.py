@@ -171,6 +171,7 @@ def test_vault_publishing_contract():
         "Do not publish to an external website",
         "refuse to overwrite",
         "create-only",
+        "language-not-verified",
     ):
         assert rule in publishing
     assert "There is no `--update` mode" in publishing
