@@ -1,0 +1,22 @@
+manifest_version: 2
+api_version: 1
+name: hermes-wiki-router
+label: Hermes Wiki Router
+kind: standalone
+version: 0.1.0
+description: Reuse Discord research threads for duplicate YouTube links.
+author: gonasooc, Hermes Agent
+capabilities:
+  - gateway.platform_actions
+provides_hooks:
+  - gateway_message_route
+config_schema:
+  parent_channel_id:
+    type: int
+    required: true
+    description: Discord parent channel managed by this router.
+  db_path:
+    type: str
+    required: false
+    default: ""
+    description: Optional SQLite mapping path.
