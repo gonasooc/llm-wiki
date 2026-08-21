@@ -73,6 +73,20 @@ def test_hermes_wiki_security_and_isolation_contract():
     assert "--strict" in text
 
 
+def test_transcript_helper_uses_an_isolated_uv_dependency():
+    text = SKILL.read_text(encoding="utf-8")
+
+    assert (
+        'uv run --with youtube-transcript-api python "$TRANSCRIPT_HELPER"'
+        in text
+    )
+    assert "quote the validated URL with `execute_code`'s `shell_quote` helper" in text
+    assert not any(
+        line.strip().startswith("uv pip install")
+        for line in text.splitlines()
+    )
+
+
 def test_every_citation_command_uses_the_thread_video_ledger():
     text = SKILL.read_text(encoding="utf-8")
     commands = [

@@ -65,7 +65,14 @@ Do not infer the work identity from a fan upload title alone. Completion criteri
 
 ### 2. Retrieve the transcript without making it a hard dependency
 
-Load `youtube-content` with `skill_view` and follow its transcript workflow. Validate that the returned text is non-empty. Report the transcript language only when the retrieval tool returns language metadata; otherwise write `language not verified` rather than inferring metadata from the text.
+Load `youtube-content` with `skill_view` and use the helper path returned by that tool. Do not run `uv pip install` from the Gateway shell: its current working directory may select an unrelated system Python. Instead, quote the validated URL with `execute_code`'s `shell_quote` helper and use this CWD-independent command shape:
+
+```text
+TRANSCRIPT_HELPER="<youtube-content skill directory>/scripts/fetch_transcript.py"
+uv run --with youtube-transcript-api python "$TRANSCRIPT_HELPER" "<validated-youtube-url>" --text-only --timestamps
+```
+
+Validate that the returned text is non-empty. Report the transcript language only when the retrieval tool returns language metadata; otherwise write `language not verified` rather than inferring metadata from the text.
 
 If the transcript is unavailable, continue with metadata, the description, official credits, interviews, and other verified sources. State clearly that the transcript is unavailable and do not reconstruct dialogue or lyrics from memory.
 
