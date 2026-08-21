@@ -13,6 +13,9 @@ REFERENCE = (
     / "references"
     / "research-output.md"
 )
+BLOG_REFERENCE = REFERENCE.with_name("blog-output.md")
+PUBLISHING_REFERENCE = REFERENCE.with_name("publishing.md")
+PUBLISHER = SKILL.parent / "scripts" / "publish_note.py"
 
 
 def _frontmatter(text: str) -> dict:
@@ -63,7 +66,7 @@ def test_hermes_wiki_security_and_isolation_contract():
         "--ledger",
         "Reset this video-specific ledger exactly once",
         "language not verified",
-        "Do not create or modify vault files in this phase",
+        "Never write to the vault without an explicit publishing request",
         "Reject malformed video IDs",
     )
     for rule in required_safety_rules:
@@ -122,3 +125,52 @@ def test_research_output_reference_contract():
         "## 출처와 불확실성",
     ):
         assert heading in text
+
+
+def test_blog_output_reference_contract():
+    assert BLOG_REFERENCE.exists()
+    text = BLOG_REFERENCE.read_text(encoding="utf-8")
+
+    for heading in (
+        "## 들어가며",
+        "## 작품과 녹음",
+        "## 배경과 맥락",
+        "## 듣기의 포인트",
+        "## 크레딧과 검증",
+        "## 함께 탐색할 것",
+        "## 출처와 불확실성",
+        "## Sources",
+    ):
+        assert heading in text
+    assert "보고서 문장을 단순히 복사하지 않는다" in text
+    assert "후속 질문" in text
+
+
+def test_vault_publishing_contract():
+    assert PUBLISHING_REFERENCE.exists()
+    assert PUBLISHER.exists()
+    skill = SKILL.read_text(encoding="utf-8")
+    publishing = PUBLISHING_REFERENCE.read_text(encoding="utf-8")
+
+    for rule in (
+        "글로 정리",
+        "references/blog-output.md",
+        "references/publishing.md",
+        "explicit publishing request",
+        "reuse the existing citation ledger without resetting it",
+    ):
+        assert rule in skill
+
+    assert "$HERMES_HOME/plugin-data/hermes-wiki-router/publishing.json" in publishing
+    assert "/Users/" not in publishing
+    for rule in (
+        "publish_note.py",
+        "--request-file",
+        "--body-file",
+        "status: draft",
+        "Do not publish to an external website",
+        "refuse to overwrite",
+        "create-only",
+    ):
+        assert rule in publishing
+    assert "There is no `--update` mode" in publishing

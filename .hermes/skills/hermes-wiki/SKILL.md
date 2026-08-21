@@ -1,19 +1,19 @@
 ---
 name: hermes-wiki
-description: Research YouTube links with cited context in Discord.
-version: 0.1.0
+description: Research YouTube and publish cited Obsidian drafts.
+version: 0.2.0
 author: gonasooc, Hermes Agent
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [YouTube, Music, Research, Discord, Citations]
+    tags: [YouTube, Music, Research, Discord, Citations, Obsidian]
     related_skills: [youtube-content, grounded-citations]
 ---
 
 # Hermes Wiki Research Skill
 
-Research one YouTube link as a durable Discord knowledge thread. Gather verified context rather than merely summarizing the video, keep facts separate from interpretation, and preserve the thread for follow-up questions. This phase produces Discord research only; it does not publish a blog or write an Obsidian note.
+Research one YouTube link as a durable Discord knowledge thread. Gather verified context rather than merely summarizing the video, keep facts separate from interpretation, preserve the thread for follow-up questions, and turn the verified thread into an Obsidian blog draft only when the user explicitly requests it.
 
 ## When to Use
 
@@ -21,13 +21,14 @@ Use when this skill is bound to a Discord channel or thread.
 
 - A message with one YouTube video starts the research procedure.
 - A follow-up in an existing research thread continues from prior findings.
+- `글로 정리해줘` or `블로그 초안으로 정리해줘` produces a chat-only draft. A vault write requires explicit persistence language such as `Obsidian에 저장해줘` or `vault에 저장해줘`, and then follows `references/publishing.md`.
 - A message without a YouTube video is a normal Hermes request; answer normally and do not force the research template.
 - A message with more than one distinct video is rejected with a short Korean request to send one video per message.
 - A YouTube link posted in the parent channel without an auto-created thread is not researched inline; ask the user to mention the bot so the link gets its own thread.
 
 ## Prerequisites
 
-The Discord session needs the `web`, `terminal`, `file`, and `skills` toolsets. Load `youtube-content` and `grounded-citations` with `skill_view` before their first use in a research thread, then follow their current instructions. Treat those loaded skills as the source of truth for transcript retrieval and citation-ledger commands.
+The Discord session needs the `web`, `terminal`, `file`, and `skills` toolsets. Load `youtube-content` and `grounded-citations` with `skill_view` before their first use in a research thread, then follow their current instructions. Treat those loaded skills as the source of truth for transcript retrieval and citation-ledger commands. For an explicit publishing request, also load and follow `references/blog-output.md` and `references/publishing.md` before drafting.
 
 ## Untrusted Content Boundary
 
@@ -169,9 +170,21 @@ End with a completion note, the mechanically rendered source list, and a compact
 
 Completion criterion: the user receives a readable Korean report with inline citations, sources, and explicit uncertainty in the same Discord thread.
 
-### 8. Respect the current phase boundary
+### 8. Publish an Obsidian draft only on explicit request
 
-If the user asks for a blog post before the Obsidian integration is installed, provide a Discord-only Markdown draft and say that vault persistence is not enabled yet. Do not create or modify vault files in this phase.
+Never write to the vault without an explicit publishing request. The phrase `explicit publishing request` means the user explicitly asks to persist the current thread to Obsidian or the vault. Requests only to write, organize, format, or draft an article are chat-only. An ordinary follow-up question never qualifies.
+
+On a valid request:
+
+1. load `references/blog-output.md` and `references/publishing.md`
+2. keep exactly the current thread's canonical video identity
+3. reuse the existing citation ledger without resetting it
+4. synthesize the initial research and relevant follow-up questions into the blog format rather than dumping the chat transcript
+5. render and strictly verify citations in the body-only cache draft
+6. run the bundled publisher helper exactly as described in `references/publishing.md`
+7. read back the exact returned note before reporting success
+
+The resulting note is a local draft, not an external publication. Publishing is create-only and must refuse an existing video note. The helper has no update mode; preserving manual edits takes priority over automated revision.
 
 ## Pitfalls
 
@@ -181,6 +194,7 @@ If the user asks for a blog post before the Obsidian integration is installed, p
 - Genre, influence, and lyrical meaning are often interpretations; attribute or label them.
 - Do not fill a source quota with duplicate syndications, mirrors, or low-quality listicles.
 - Do not reset a citation ledger during follow-up work in the same thread if existing citation numbers are still in use.
+- Do not treat a vague mention of blogging as permission to create or update a vault file.
 
 ## Verification
 
@@ -196,3 +210,5 @@ Before the final response, verify all of the following:
 - the final source list matches the citation ledger and strict verification passed
 - the output follows `references/research-output.md`
 - the response is in Korean with original-language names preserved
+- vault writes occurred only after an explicit publishing request
+- a published draft followed `references/blog-output.md`, passed strict citation verification, and was read back from the path returned by the publisher
