@@ -1,7 +1,7 @@
 ---
 name: hermes-wiki
 description: Research YouTube and publish cited Obsidian drafts.
-version: 0.2.0
+version: 0.3.0
 author: gonasooc, Hermes Agent
 license: MIT
 platforms: [linux, macos, windows]
@@ -112,7 +112,30 @@ Use inline numbered citations immediately after source-bearing sentences and ren
 
 Completion criterion: every citation in the draft resolves to a retrieved ledger entry.
 
-### 4. Research official context first
+### 4. Prioritize review and post-release reporting
+
+Before expanding the work analysis, conduct a dedicated review and post-release reporting pass.
+
+#### Editorial reviews
+
+1. Use Album of the Year and similar review-discovery or aggregator pages to find candidate publication reviews.
+2. Treat an aggregator, user score, rating distribution, or search snippet as a lead or labeled aggregate context—not as an editorial review.
+3. Retrieve the original publication page for each candidate and summarize only a directly read editorial review.
+4. For every included review, report the **publication, date, score** only when explicitly published, the review's central verdict, and 2-4 distinctive observations with inline citations.
+5. Keep reviewers and outlets separate. Do not collapse them into a single generalized reception statement.
+6. If the original review cannot be retrieved, identify it only as an aggregator-discovered lead; do not attribute a review argument, score, or quotation to it.
+
+#### Post-release reporting
+
+Prioritize interviews, making-of coverage, studio and production reports, official behind-the-scenes releases, artist/creator statements, and later reporting about reception, collaborators, controversy, touring, revisions, or impact.
+
+- State who said what, where, and when; distinguish original release context from later coverage.
+- Translate relevant factual passages and brief quotations into Korean. Preserve original-language text when useful and label it `Hermes translation`.
+- Do not translate or reproduce a full review, interview, article, transcript, lyrics, or other copyrighted text. Summarize in Korean and use only short quotations needed for analysis.
+
+Completion criterion: the draft has a source-separated review and post-release reporting record, or explicitly says that no credible material was found.
+
+### 5. Research official context first
 
 Search official and primary sources before secondary commentary:
 
@@ -128,7 +151,7 @@ Target 10-20 sources over roughly 5-10 minutes. Stop earlier at information satu
 
 Completion criterion: the source set is official-first, material claims are corroborated where possible, and the stopping reason is defensible.
 
-### 5. Analyze according to content type
+### 6. Analyze according to content type
 
 For music, investigate where evidence allows:
 
@@ -150,7 +173,7 @@ Do not reproduce full lyrics or long transcript passages. Use only short quotati
 
 Completion criterion: the analysis covers the work itself, wider context, verification, and discovery paths without blurring fact and interpretation.
 
-### 6. Handle conflicts and inaccessible material
+### 7. Handle conflicts and inaccessible material
 
 When sources conflict, present the competing claims with separate citations, source quality, and the reason one account may deserve more weight. Do not silently choose the convenient version.
 
@@ -160,7 +183,7 @@ If a retrieval step fails, continue with partial results, identify the failed st
 
 Completion criterion: every important limitation or conflict is visible to the reader.
 
-### 7. Deliver the Discord report
+### 8. Deliver the Discord report
 
 Write in Korean; preserve original-language proper nouns and brief quotations alongside Korean explanation. Follow `references/research-output.md` for section order.
 
@@ -170,7 +193,7 @@ End with a completion note, the mechanically rendered source list, and a compact
 
 Completion criterion: the user receives a readable Korean report with inline citations, sources, and explicit uncertainty in the same Discord thread.
 
-### 8. Publish an Obsidian draft only on explicit request
+### 9. Publish an Obsidian draft only on explicit request
 
 Never write to the vault without an explicit publishing request. The phrase `explicit publishing request` means the user explicitly asks to persist the current thread to Obsidian or the vault. Requests only to write, organize, format, or draft an article are chat-only. An ordinary follow-up question never qualifies.
 

@@ -118,6 +118,7 @@ def test_research_output_reference_contract():
 
     for heading in (
         "## 핵심 요약",
+        "## 리뷰와 후일담",
         "## 작품·영상 분석",
         "## 배경과 맥락",
         "## 검증 정보",
@@ -125,6 +126,31 @@ def test_research_output_reference_contract():
         "## 출처와 불확실성",
     ):
         assert heading in text
+
+    for rule in (
+        "매체별 리뷰 요약",
+        "집계 점수",
+        "직접 읽은 개별 리뷰",
+        "후일담",
+        "인터뷰",
+        "제작기",
+        "번역",
+    ):
+        assert rule in text
+
+
+def test_skill_prioritizes_reviews_and_post_release_reporting():
+    text = SKILL.read_text(encoding="utf-8")
+
+    for rule in (
+        "review and post-release reporting",
+        "Album of the Year",
+        "editorial review",
+        "publication, date, score",
+        "interviews, making-of coverage",
+        "Do not translate or reproduce a full review",
+    ):
+        assert rule in text
 
 
 def test_blog_output_reference_contract():
