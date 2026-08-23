@@ -1,7 +1,7 @@
 ---
 name: hermes-wiki
 description: Research YouTube and publish cited Obsidian drafts.
-version: 0.9.0
+version: 1.0.0
 author: gonasooc, Hermes Agent
 license: MIT
 platforms: [linux, macos, windows]
@@ -124,6 +124,14 @@ Before expanding the work analysis, conduct a dedicated review and post-release 
 4. For every included review, report the **publication, date, score** only when explicitly published, the review's central verdict, and 2-4 distinctive observations with inline citations.
 5. Keep reviewers and outlets separate. Do not collapse them into a single generalized reception statement.
 6. If the original review cannot be retrieved, identify it only as an aggregator-discovered lead; do not attribute a review argument, score, or quotation to it.
+
+#### Exhaustive critic-review indexes
+
+When a critic-review index such as Album of the Year's `Critic Reviews` lists individual outlets, enumerate **all listed critic reviews**, including every “view more” or paginated entry. This is an exhaustive index task: do not stop at information saturation until every listed entry has a final status.
+
+For each outlet, retrieve the original review page and record `directly read`, `unavailable`, or `index-only listing`. Directly read reviews get the normal cited per-outlet summary. For an inaccessible original, name the outlet and reason; never present an index score/snippet as the review's argument. End with a `listed/read/unavailable` count.
+
+If a target single or lyric video belongs to an album with such an index, process the complete index as **album-level reception context**. Keep that album-level reception separate from direct track reviews and explicitly say which scope each entry covers.
 
 #### Korean album review source policy
 

@@ -155,6 +155,11 @@ def test_research_output_reference_contract():
         "사운드네트워크",
         "멜론매거진",
         "한국대중음악상",
+        "Critic-review coverage",
+        "전체 목록",
+        "직접 읽음",
+        "접근 불가",
+        "앨범 단위 평론",
         "커뮤니티 source selection",
         "아이돌/K-pop",
         "인디·밴드·록·포크",
@@ -210,6 +215,11 @@ def test_skill_prioritizes_reviews_and_post_release_reporting():
         "official activity/industry/scene context",
         "musical genre/collaborator/album context",
         "classification uncertainty",
+        "all listed critic reviews",
+        "critic-review index",
+        "do not stop at information saturation",
+        "listed/read/unavailable",
+        "album-level reception context",
     ):
         assert rule in text
 

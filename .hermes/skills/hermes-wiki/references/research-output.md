@@ -49,6 +49,14 @@ This is a high-priority section. Research it before expanding the work analysis.
 - If the original review page is inaccessible, label that outlet as an aggregator-discovered lead; do not summarize its alleged argument or score as if the full review was read.
 - Separate editorial criticism from user/community reception. Report aggregate figures only as labeled context, with their methodology and date when available.
 
+### Critic-review coverage
+
+- When an accessible critic-review index (for example Album of the Year’s `Critic Reviews`) lists individual outlets, enumerate the **전체 목록**, including every paginated or “view more” entry. Record the index URL, its listed review count, and the retrieval date.
+- For every listed outlet, retrieve the original review page and record one status: **직접 읽음**, **접근 불가**, or `index-only listing`. Do not stop at information saturation while any entry in that critic-review index remains unenumerated.
+- Directly read reviews receive the normal publication/date/score/verdict summary and an original-page citation. For an inaccessible original, record the outlet and the reason; a score or snippet visible only in the index must be labeled as index metadata, never as the review's own argument.
+- End the subsection with a compact `Critic-review coverage` line such as `listed/read/unavailable: 20 / 16 / 4`. This is a coverage accounting statement, not a critic-score aggregate.
+- When the target video is a single or lyric video linked to an album, an album critic-review index may be researched as **앨범 단위 평론** / album-level reception context. Keep it distinct from direct track criticism and state that boundary in the summary.
+
 ### 한국 앨범 리뷰 source policy
 
 - Apply this policy when Korean-album detection is supported by explicit work, artist, label, distributor, release, or official metadata context. Do not infer an artist's nationality from a name, language alone, ethnicity, or community claims; when the release context remains unclear, search both the Korean and global review sets and state the ambiguity.
