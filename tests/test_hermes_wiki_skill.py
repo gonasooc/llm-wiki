@@ -140,6 +140,9 @@ def test_research_output_reference_contract():
         "DCInside",
         "HIPHOPLE",
         "공개 게시물",
+        "폭넓게 검색",
+        "커뮤니티 종합 분석",
+        "같은 Discord thread",
     ):
         assert rule in text
 
@@ -156,6 +159,10 @@ def test_skill_prioritizes_reviews_and_post_release_reporting():
         "Do not translate or reproduce a full review",
         "community reception",
         "not evidence of factual claims",
+        "broad community search",
+        "information saturation",
+        "community analysis",
+        "same Discord thread",
     ):
         assert rule in text
 
