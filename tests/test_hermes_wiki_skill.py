@@ -160,6 +160,10 @@ def test_research_output_reference_contract():
         "직접 읽음",
         "접근 불가",
         "앨범 단위 평론",
+        "독립 web review discovery",
+        "AOTY-only",
+        "web-discovered",
+        "검색 query",
         "커뮤니티 source selection",
         "아이돌/K-pop",
         "인디·밴드·록·포크",
@@ -220,6 +224,10 @@ def test_skill_prioritizes_reviews_and_post_release_reporting():
         "do not stop at information saturation",
         "listed/read/unavailable",
         "album-level reception context",
+        "independent web review discovery",
+        "AOTY is a floor, not a ceiling",
+        "outlet-independent web search",
+        "web-discovered review",
     ):
         assert rule in text
 

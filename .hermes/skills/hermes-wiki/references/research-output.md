@@ -57,6 +57,13 @@ This is a high-priority section. Research it before expanding the work analysis.
 - End the subsection with a compact `Critic-review coverage` line such as `listed/read/unavailable: 20 / 16 / 4`. This is a coverage accounting statement, not a critic-score aggregate.
 - When the target video is a single or lyric video linked to an album, an album critic-review index may be researched as **앨범 단위 평론** / album-level reception context. Keep it distinct from direct track criticism and state that boundary in the summary.
 
+### 독립 web review discovery
+
+- A critic-review index is a floor, not a ceiling. Run independent, outlet-independent web search even after the index is fully enumerated, because a publication may review the work before an index updates or may never be included there.
+- Use multiple 검색 query families: exact `artist + album/work + review`, original/Korean/romanized title variants, release-year/date-window variants, relevant genre terms, artist/album interview or production context, and source-specific queries for known outlets in the work's language, region, and genre ecosystem.
+- Retrieve every candidate original page before treating it as a review. Record a page absent from the index as **web-discovered**; record an indexed outlet not found by web search as **AOTY-only**. Never use a search snippet as the review's argument.
+- Keep distinct coverage counts: index `listed/read/unavailable` and independent web `candidates/read/unavailable/web-discovered`. Report that web discovery is broad but cannot prove that every review on the internet has been found.
+
 ### 한국 앨범 리뷰 source policy
 
 - Apply this policy when Korean-album detection is supported by explicit work, artist, label, distributor, release, or official metadata context. Do not infer an artist's nationality from a name, language alone, ethnicity, or community claims; when the release context remains unclear, search both the Korean and global review sets and state the ambiguity.

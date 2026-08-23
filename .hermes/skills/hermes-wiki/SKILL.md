@@ -1,7 +1,7 @@
 ---
 name: hermes-wiki
 description: Research YouTube and publish cited Obsidian drafts.
-version: 1.0.0
+version: 1.1.0
 author: gonasooc, Hermes Agent
 license: MIT
 platforms: [linux, macos, windows]
@@ -132,6 +132,12 @@ When a critic-review index such as Album of the Year's `Critic Reviews` lists in
 For each outlet, retrieve the original review page and record `directly read`, `unavailable`, or `index-only listing`. Directly read reviews get the normal cited per-outlet summary. For an inaccessible original, name the outlet and reason; never present an index score/snippet as the review's argument. End with a `listed/read/unavailable` count.
 
 If a target single or lyric video belongs to an album with such an index, process the complete index as **album-level reception context**. Keep that album-level reception separate from direct track reviews and explicitly say which scope each entry covers.
+
+#### Independent web review discovery
+
+**AOTY is a floor, not a ceiling.** After exhausting any critic-review index, run independent web review discovery because outlets can publish before an index updates or may never be indexed. Use outlet-independent web search across exact artist/work/album review queries, original/Korean/romanized title variants, release-year/date-window variants, genre terms, and source-specific queries for relevant language, regional, and genre outlets.
+
+Retrieve each candidate original page before calling it a review. Mark a review absent from the index as a `web-discovered review`; mark an indexed outlet not found via independent discovery as `AOTY-only`. Never use a search snippet as its argument. Report index `listed/read/unavailable` separately from web-discovery `candidates/read/unavailable/web-discovered`, and state that broad web discovery cannot prove every review on the internet has been found.
 
 #### Korean album review source policy
 
