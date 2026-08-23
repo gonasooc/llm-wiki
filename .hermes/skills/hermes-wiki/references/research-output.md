@@ -18,6 +18,14 @@ Keep this section in the same Discord thread as the analysis. It is a compact, r
 - For each material source, record the publication/platform, date when available, what was checked, the specific finding or short evidence-bearing quotation, and its inline citation.
 - Distinguish a full-page retrieval from a search-result lead. A lead may identify a next step but cannot support an asserted finding.
 
+### 분류 판단
+
+- Record the work's `primary community matrix`, `secondary community matrix` when applicable, the explicit sources that support each choice, and any 분류 불확실성.
+- Select the primary matrix from **공식 활동/산업/씬 맥락**: official artist/label/distributor descriptions, release campaign framing, explicitly stated group/solo/project identity, and documented label, scene, or fandom context. This determines where the work's most relevant audience discussion is likely to occur.
+- Select a secondary matrix from **음악적 장르·협업·앨범 특성**: official genre metadata, directly read editorial genre descriptions, documented collaborators, instrumentation, and album-specific artistic direction. It expands the search; it does not replace the primary audience context.
+- If the primary and secondary matrix agree, use one matrix. If they materially differ, search both, label which is primary and secondary, and compare their samples separately. Do not force one exclusive genre label onto a hybrid work.
+- If official activity/industry/scene context and musical evidence conflict or are insufficient, record classification uncertainty, search broad communities plus the plausible matrices, and do not claim that any one audience represents the work.
+
 ### 제외·접근 실패
 
 - Record material dead ends that affect confidence: deleted/private/region-blocked pages, login walls, unavailable transcripts, paywalled pages, duplicate syndications, and review or community leads whose original page could not be read.

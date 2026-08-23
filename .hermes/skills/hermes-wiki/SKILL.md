@@ -1,7 +1,7 @@
 ---
 name: hermes-wiki
 description: Research YouTube and publish cited Obsidian drafts.
-version: 0.8.0
+version: 0.9.0
 author: gonasooc, Hermes Agent
 license: MIT
 platforms: [linux, macos, windows]
@@ -151,6 +151,10 @@ Prioritize interviews, making-of coverage, studio and production reports, offici
 
 Search publicly accessible posts on Reddit, DCInside, HIPHOPLE, and other materially relevant music communities for the canonical artist, work, album, or video. This is community reception, not evidence of factual claims, credits, dates, intent, or allegations.
 
+- Choose two independent axes before searching:
+  - **primary community matrix** = official activity/industry/scene context: official artist/label/distributor descriptions, release campaign framing, stated group/solo/project identity, and documented label, scene, or fandom context. This identifies the audience ecosystem most likely to discuss the work.
+  - **secondary community matrix** = musical genre/collaborator/album context: official genre metadata, directly read editorial genre descriptions, documented collaborators, instrumentation, and album-specific direction. This adds relevant listening communities without replacing the primary audience context.
+- If primary and secondary context agree, use one matrix. If they materially differ, search both, keep their samples separate, and state which is primary versus secondary. If evidence is missing or conflicts, record classification uncertainty, search broad communities plus plausible matrices, and never force a single exclusive genre label.
 - Use a **genre-aware community matrix** from confirmed artist/work/release/genre context. Do not infer the target community set from a name, language alone, ethnicity, or community claims.
   - **아이돌/K-pop**: public Theqoo, publicly indexed Instiz/Pann pages where accessible, relevant public DCInside artist/fandom boards, Reddit `r/kpop`, `r/kpopthoughts`, and act-specific subreddits. Keep Korean-language and international-fandom samples separate.
   - **인디·밴드·록·포크**: DCInside **인디밴드 갤러리**, Reddit `r/kindie`, `r/indieheads`, and public scene-, venue-, label-, or artist-specific spaces.

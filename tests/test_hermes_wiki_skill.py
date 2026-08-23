@@ -165,6 +165,12 @@ def test_research_output_reference_contract():
         "국내힙합 마이너 갤러리",
         "전자 음악 마이너 갤러리",
         "Browser Use fallback",
+        "분류 판단",
+        "primary community matrix",
+        "secondary community matrix",
+        "공식 활동/산업/씬 맥락",
+        "음악적 장르·협업·앨범 특성",
+        "분류 불확실성",
     ):
         assert rule in text
 
@@ -199,6 +205,11 @@ def test_skill_prioritizes_reviews_and_post_release_reporting():
         "r/kindie",
         "r/khiphop",
         "r/electronicmusic",
+        "primary community matrix",
+        "secondary community matrix",
+        "official activity/industry/scene context",
+        "musical genre/collaborator/album context",
+        "classification uncertainty",
     ):
         assert rule in text
 
