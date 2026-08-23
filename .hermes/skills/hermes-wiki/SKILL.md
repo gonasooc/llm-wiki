@@ -1,7 +1,7 @@
 ---
 name: hermes-wiki
 description: Research YouTube and publish cited Obsidian drafts.
-version: 0.6.0
+version: 0.7.0
 author: gonasooc, Hermes Agent
 license: MIT
 platforms: [linux, macos, windows]
@@ -124,6 +124,20 @@ Before expanding the work analysis, conduct a dedicated review and post-release 
 4. For every included review, report the **publication, date, score** only when explicitly published, the review's central verdict, and 2-4 distinctive observations with inline citations.
 5. Keep reviewers and outlets separate. Do not collapse them into a single generalized reception statement.
 6. If the original review cannot be retrieved, identify it only as an aggregator-discovered lead; do not attribute a review argument, score, or quotation to it.
+
+#### Korean album review source policy
+
+Use Korean-album detection only when official or credible release context explicitly supports it; never infer nationality from a name, language alone, ethnicity, or community claims. When the classification remains uncertain, search Korean and global review sets and disclose the ambiguity.
+
+For a Korean album, query these editorial discovery source sites before relying on Album of the Year:
+
+1. **IZM** (`https://www.izm.co.kr/`) for broad Korean popular-music album coverage.
+2. **온음** (`https://www.tonplein.com/`) for domestic, indie, alternative, monthly criticism, and interviews.
+3. **리드머** (`http://www.rhythmer.net/`) first for Korean hip-hop, R&B, soul, and black-music releases.
+
+Each is an editorial discovery source, not a review claim by itself. Retrieve the individual review page before reporting a critic, date, score, argument, or quotation.
+
+Use **사운드네트워크** for archive/history/critic context, **멜론매거진** for editorial features/interviews/platform context, and **한국대중음악상** material for awards or selection context. These are context and post-release source tiers, not replacements for individual editorial reviews. If no material Korean editorial review is found, report that scarcity rather than substituting community reception, retailer metadata, award nominations, or aggregate scores.
 
 #### Post-release reporting
 

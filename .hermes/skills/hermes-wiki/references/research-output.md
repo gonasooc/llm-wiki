@@ -41,6 +41,14 @@ This is a high-priority section. Research it before expanding the work analysis.
 - If the original review page is inaccessible, label that outlet as an aggregator-discovered lead; do not summarize its alleged argument or score as if the full review was read.
 - Separate editorial criticism from user/community reception. Report aggregate figures only as labeled context, with their methodology and date when available.
 
+### 한국 앨범 리뷰 source policy
+
+- Apply this policy when Korean-album detection is supported by explicit work, artist, label, distributor, release, or official metadata context. Do not infer an artist's nationality from a name, language alone, ethnicity, or community claims; when the release context remains unclear, search both the Korean and global review sets and state the ambiguity.
+- Search these editorial discovery source sites before treating Album of the Year as a useful Korean-review lead: **IZM** (`https://www.izm.co.kr/`) for broad Korean popular-music album coverage; **온음** (`https://www.tonplein.com/`) for domestic/indie/alternative criticism, monthly coverage, and interviews; and **리드머** (`http://www.rhythmer.net/`) first for Korean hip-hop, R&B, soul, and black-music releases.
+- Each site is a discovery source, not a substitute for reading an individual review. Retrieve the specific review page and identify the reviewer, date, and score only when that original page provides them.
+- Use **사운드네트워크** (`https://soundnetwork.kr/`) as an archive/history/critic-context source rather than assuming it has a current release review. Use **멜론매거진** (`https://event.melon.com/musicstory/index.htm`) for interviews, editorial features, and platform context rather than as an album-review database. Use **한국대중음악상** material as awards/selection context, never as an individual editorial review.
+- If the Korean editorial search has no material review, say so plainly. Do not replace it with community reactions, award nominations, retailer metadata, or an aggregate score.
+
 ### 후일담·인터뷰·제작기
 
 - Prioritize post-release interviews, making-of coverage, studio/production reports, official behind-the-scenes material, creative statements, and later reporting about reception, controversy, touring, revisions, or collaborators.

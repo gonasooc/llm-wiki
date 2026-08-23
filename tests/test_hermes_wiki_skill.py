@@ -148,6 +148,13 @@ def test_research_output_reference_contract():
         "제외·접근 실패",
         "커뮤니티 탐색 기록",
         "raw tool output",
+        "한국 앨범 리뷰 source policy",
+        "IZM",
+        "온음",
+        "리드머",
+        "사운드네트워크",
+        "멜론매거진",
+        "한국대중음악상",
     ):
         assert rule in text
 
@@ -171,6 +178,10 @@ def test_skill_prioritizes_reviews_and_post_release_reporting():
         "research record",
         "research findings",
         "not only conclusions",
+        "Korean album review source policy",
+        "editorial discovery source",
+        "context and post-release source",
+        "Korean-album detection",
     ):
         assert rule in text
 
