@@ -29,6 +29,15 @@ This is a high-priority section. Research it before expanding the work analysis.
 - Do not translate or reproduce a full review, interview, article, transcript, lyrics, or other copyrighted text. Summarize it in Korean and quote only brief excerpts needed for analysis.
 - Keep the report date explicit: later coverage must not be presented as if it were part of the original release context.
 
+### 커뮤니티 반응
+
+- Search 공개 게시물 about the canonical artist, work, album, or video on Reddit, DCInside, HIPHOPLE, and other materially relevant music communities. Use a platform's public and accessible pages only; do not bypass login walls, access private communities, or collect personal information.
+- Treat this as **community reception**, not evidence of factual claims, credits, dates, intent, or allegations. Verify factual claims independently with official, primary, or reputable reporting before repeating them as fact.
+- Summarize a small, attributable sample by platform rather than claiming it represents all listeners. State the collection limitation: search visibility, moderation, ranking, language, and time window can bias what was found.
+- For each platform, identify recurring positive reactions, criticism, interpretive disputes, useful discovery links, and meaningful minority views. Separate a high-engagement post from a broadly shared view unless the available evidence supports the distinction.
+- Quote only brief public excerpts when they clarify a reaction; translate them into Korean as `Hermes translation` while preserving the original-language phrase when useful. Do not reproduce personal attacks, doxxing, unverified accusations, or long copyrighted text.
+- Use inline citations for every platform or public post summarized. Preserve the platform and post date where available, but omit usernames unless essential to attribute a public statement.
+
 ## 작품·영상 분석
 
 For music, cover the composition or recording, lyrics or themes, structure, genre, sound, performance, credits, and visual direction where evidence permits.

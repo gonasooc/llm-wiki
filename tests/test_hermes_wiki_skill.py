@@ -135,6 +135,11 @@ def test_research_output_reference_contract():
         "인터뷰",
         "제작기",
         "번역",
+        "커뮤니티 반응",
+        "Reddit",
+        "DCInside",
+        "HIPHOPLE",
+        "공개 게시물",
     ):
         assert rule in text
 
@@ -149,6 +154,8 @@ def test_skill_prioritizes_reviews_and_post_release_reporting():
         "publication, date, score",
         "interviews, making-of coverage",
         "Do not translate or reproduce a full review",
+        "community reception",
+        "not evidence of factual claims",
     ):
         assert rule in text
 
