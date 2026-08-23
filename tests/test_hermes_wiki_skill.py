@@ -155,6 +155,16 @@ def test_research_output_reference_contract():
         "사운드네트워크",
         "멜론매거진",
         "한국대중음악상",
+        "커뮤니티 source selection",
+        "아이돌/K-pop",
+        "인디·밴드·록·포크",
+        "힙합·R&B·소울",
+        "전자음악",
+        "Theqoo",
+        "인디밴드 갤러리",
+        "국내힙합 마이너 갤러리",
+        "전자 음악 마이너 갤러리",
+        "Browser Use fallback",
     ):
         assert rule in text
 
@@ -182,6 +192,13 @@ def test_skill_prioritizes_reviews_and_post_release_reporting():
         "editorial discovery source",
         "context and post-release source",
         "Korean-album detection",
+        "genre-aware community matrix",
+        "Firecrawl extraction fails",
+        "Browser Use fallback",
+        "r/kpop",
+        "r/kindie",
+        "r/khiphop",
+        "r/electronicmusic",
     ):
         assert rule in text
 

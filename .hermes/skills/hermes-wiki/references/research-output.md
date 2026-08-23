@@ -60,8 +60,15 @@ This is a high-priority section. Research it before expanding the work analysis.
 ### 커뮤니티 반응
 
 - Search 공개 게시물 about the canonical artist, work, album, or video on Reddit, DCInside, HIPHOPLE, and other materially relevant music communities. Use a platform's public and accessible pages only; do not bypass login walls, access private communities, or collect personal information.
+- **커뮤니티 source selection**: select the discovery set from confirmed artist/work/release/genre context, not from language, ethnicity, or a name alone. Record the classification and selected platform set in `### 커뮤니티 탐색 기록`.
+  - **아이돌/K-pop**: prioritize public Theqoo, publicly indexed Instiz/Pann pages where accessible, relevant public DCInside artist/fandom boards, Reddit `r/kpop`, `r/kpopthoughts`, and relevant group/act subreddits. Separate Korean-language and international-fandom reactions.
+  - **인디·밴드·록·포크**: prioritize DCInside **인디밴드 갤러리**, Reddit `r/kindie`, `r/indieheads`, and public scene-, venue-, label-, or artist-specific discussion spaces discovered for the work.
+  - **힙합·R&B·소울**: prioritize **HIPHOPLE**, DCInside **국내힙합 마이너 갤러리**, Reddit `r/khiphop`, and relevant artist/label communities.
+  - **전자음악**: prioritize DCInside **전자 음악 마이너 갤러리**, Reddit `r/electronicmusic`, and public genre- or producer-specific communities.
+  - **other genres**: begin with broad Korean/international music communities, then add public genre-specific spaces discovered from the release's scene, collaborators, or audience.
 - 폭넓게 검색: artist/work/album/video의 정확한 표기, 원어·한국어·로마자 별칭, collaborator, 장르, 발매일 전후 기간을 조합해 general music communities, genre communities, regional/Korean communities, fan communities, public forum threads, and public comment spaces를 platform sweep한다. Reddit, DCInside, HIPHOPLE는 시작점일 뿐이며 관련 공개 커뮤니티 목록을 고정하지 않는다.
 - Record the platforms and community spaces attempted, accessible, and unavailable. Seek materially different communities rather than many near-duplicate threads from one platform; continue broad discovery until information saturation, then state the coverage boundary instead of claiming exhaustiveness.
+- When Firecrawl extraction fails for a discovered public post, use a **Browser Use fallback** to open and read the public page directly. If Browser Use is unavailable, permission-blocked, login-gated, or cannot read the page, record that outcome and do not summarize the post from its snippet.
 - Treat this as **community reception**, not evidence of factual claims, credits, dates, intent, or allegations. Verify factual claims independently with official, primary, or reputable reporting before repeating them as fact.
 - Summarize a small, attributable sample by platform rather than claiming it represents all listeners. State the collection limitation: search visibility, moderation, ranking, language, and time window can bias what was found.
 - For each platform, identify recurring positive reactions, criticism, interpretive disputes, useful discovery links, and meaningful minority views. Separate a high-engagement post from a broadly shared view unless the available evidence supports the distinction.
