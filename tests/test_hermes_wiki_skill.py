@@ -118,6 +118,7 @@ def test_research_output_reference_contract():
 
     for heading in (
         "## 핵심 요약",
+        "## 조사 기록",
         "## 리뷰와 후일담",
         "## 작품·영상 분석",
         "## 배경과 맥락",
@@ -143,6 +144,10 @@ def test_research_output_reference_contract():
         "폭넓게 검색",
         "커뮤니티 종합 분석",
         "같은 Discord thread",
+        "확인한 자료",
+        "제외·접근 실패",
+        "커뮤니티 탐색 기록",
+        "raw tool output",
     ):
         assert rule in text
 
@@ -163,6 +168,9 @@ def test_skill_prioritizes_reviews_and_post_release_reporting():
         "information saturation",
         "community analysis",
         "same Discord thread",
+        "research record",
+        "research findings",
+        "not only conclusions",
     ):
         assert rule in text
 

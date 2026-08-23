@@ -8,6 +8,26 @@ Use this order for the initial deep-research response. Omit an empty subsection 
 - Distinguish verified facts from Hermes analysis.
 - State transcript or access limitations here when they materially affect confidence.
 
+## 조사 기록
+
+Keep this section in the same Discord thread as the analysis. It is a compact, reader-facing research record—not hidden chain-of-thought and not a raw tool output dump.
+
+### 확인한 자료
+
+- Group the material actually retrieved and read by source class: video/official metadata, transcript status, official or primary material, editorial review, post-release interview or 제작기, and community reception.
+- For each material source, record the publication/platform, date when available, what was checked, the specific finding or short evidence-bearing quotation, and its inline citation.
+- Distinguish a full-page retrieval from a search-result lead. A lead may identify a next step but cannot support an asserted finding.
+
+### 제외·접근 실패
+
+- Record material dead ends that affect confidence: deleted/private/region-blocked pages, login walls, unavailable transcripts, paywalled pages, duplicate syndications, and review or community leads whose original page could not be read.
+- State the reason the item was excluded and what was or was not inferred from it. Do not turn inaccessible snippets into evidence.
+
+### 커뮤니티 탐색 기록
+
+- List the attempted, accessible, and unavailable community platforms/spaces, the relevant query dimensions used, the collection time window, and the stopping reason.
+- This must preserve the investigation scope without exposing raw tool output, private data, usernames, internal scratch notes, or chain-of-thought.
+
 ## 리뷰와 후일담
 
 This is a high-priority section. Research it before expanding the work analysis.

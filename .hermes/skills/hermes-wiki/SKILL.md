@@ -1,7 +1,7 @@
 ---
 name: hermes-wiki
 description: Research YouTube and publish cited Obsidian drafts.
-version: 0.5.0
+version: 0.6.0
 author: gonasooc, Hermes Agent
 license: MIT
 platforms: [linux, macos, windows]
@@ -200,11 +200,13 @@ Completion criterion: every important limitation or conflict is visible to the r
 
 Write in Korean; preserve original-language proper nouns and brief quotations alongside Korean explanation. Follow `references/research-output.md` for section order.
 
-Use commentary between tool phases for concise progress or a completed verified section. Do not expose chain-of-thought, raw scratch notes, or unverified speculation. The final response must be a coherent report even if interim commentary was not rendered by the active model.
+Use commentary between tool phases for concise progress or a completed verified section. The final same Discord thread delivery must contain a reader-facing research record and research findings, not only conclusions or analysis: sources actually read, what each established, material access failures/exclusions, and the community search scope must remain visible in `## 조사 기록`.
+
+Do not expose chain-of-thought, raw scratch notes, raw tool output, private data, or unverified speculation. The research record is a concise, cited account of the investigation, not an execution transcript.
 
 End with a completion note, the mechanically rendered source list, and a compact uncertainty summary. For follow-up questions, reuse the thread context and extend the existing evidence instead of repeating the full initial report.
 
-Completion criterion: the user receives a readable Korean report with inline citations, sources, and explicit uncertainty in the same Discord thread.
+Completion criterion: the user receives a readable Korean report with inline citations, sources, an explicit research record, research findings, and uncertainty in the same Discord thread—not only conclusions.
 
 ### 9. Publish an Obsidian draft only on explicit request
 
