@@ -173,13 +173,22 @@ def test_research_output_reference_contract():
         "인디밴드 갤러리",
         "국내힙합 마이너 갤러리",
         "전자 음악 마이너 갤러리",
-        "Browser Use fallback",
+        "Hermes isolated browser fallback",
         "분류 판단",
         "primary community matrix",
         "secondary community matrix",
         "공식 활동/산업/씬 맥락",
         "음악적 장르·협업·앨범 특성",
         "분류 불확실성",
+        "접근 우선 순위",
+        "Reddit optional",
+        "실제 읽은 공개 원문",
+        "여자아이돌 음악 마이너 갤러리",
+        "밴드 마이너 갤러리",
+        "포스트락 마이너 갤러리",
+        "재즈 갤러리",
+        "메탈 마이너 갤러리",
+        "게임음악 마이너 갤러리",
     ):
         assert rule in text
 
@@ -209,7 +218,7 @@ def test_skill_prioritizes_reviews_and_post_release_reporting():
         "Korean-album detection",
         "genre-aware community matrix",
         "Firecrawl extraction fails",
-        "Browser Use fallback",
+        "Hermes isolated browser fallback",
         "r/kpop",
         "r/kindie",
         "r/khiphop",
@@ -228,6 +237,14 @@ def test_skill_prioritizes_reviews_and_post_release_reporting():
         "AOTY is a floor, not a ceiling",
         "outlet-independent web search",
         "web-discovered review",
+        "Reddit optional",
+        "access-first community collection",
+        "여자아이돌 음악 마이너 갤러리",
+        "밴드 마이너 갤러리",
+        "재즈 갤러리",
+        "메탈 마이너 갤러리",
+        "게임음악 마이너 갤러리",
+        "CAPTCHA, login wall, or timeout",
     ):
         assert rule in text
 
