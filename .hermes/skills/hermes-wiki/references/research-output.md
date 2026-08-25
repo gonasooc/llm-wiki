@@ -94,6 +94,15 @@ This is a high-priority section. Research it before expanding the work analysis.
   - **메탈·하드코어·펑크**: **메탈 마이너 갤러리**, work-relevant **포스트락 마이너 갤러리** or scene spaces, and public artist/venue communities.
   - **게임·애니·영상 음악**: **게임음악 마이너 갤러리** and work/franchise-specific public communities.
   - **other genres**: broad Korean/international music communities plus public genre-specific spaces discovered from the release's scene, collaborators, or audience.
+- **해외 음악의 community priority**: official release, artist, label, and scene context show the work's primary market is outside Korea, use **현지·국제 community** sources as the primary reception sample. A **한국어권 comparison sample** is optional and requires a material Korean release, fandom, touring, collaboration, media, or reception connection. Do not present Korean search results as foreign reception.
+  - **국제 범용**: directly readable **Rate Your Music** member reviews/comments, **Album of the Year user reviews/comments**, and **Musicboard** reviews/lists. Ratings, ranks, and aggregates are context only; keep actual user prose separate from editorial review.
+  - **해외 pop/mainstream**: directly readable **ATRL** album/single threads and work-relevant artist/fan forums discovered by query.
+  - **해외 hip-hop/R&B**: directly readable **KTT2** threads and work-relevant artist/label/scene forums; Reddit remains optional.
+  - **해외 indie/alternative/punk/hardcore**: **Sputnikmusic** user reviews/soundoffs/album discussions, **Punknews** public discussion/comment threads, and relevant scene/label/venue/artist spaces.
+  - **해외 metal**: **Metal Archives** user reviews and work-relevant public metal scene spaces.
+  - **해외 jazz/improvised music**: **Jazz Music Archives** user reviews/forums and directly readable performance/label/scene discussions.
+  - **해외 classical**: **TalkClassical** work/recording threads and directly readable specialist forums.
+  - **해외 electronic/dance**: the 국제 범용 sources plus directly readable producer/label/festival/club/regional scene communities; chart metadata alone is not discussion evidence.
 - 폭넓게 검색: artist/work/album/video의 정확한 표기, 원어·한국어·로마자 별칭, collaborator, 장르, 발매일 전후 기간을 조합해 general music communities, genre communities, regional/Korean communities, fan communities, public forum threads, and public comment spaces를 platform sweep한다. Reddit, DCInside, HIPHOPLE는 시작점일 뿐이며 관련 공개 커뮤니티 목록을 고정하지 않는다.
 - Record the platforms and community spaces attempted, accessible, and unavailable. Seek materially different communities rather than many near-duplicate threads from one platform; continue broad discovery until information saturation, then state the coverage boundary instead of claiming exhaustiveness.
 - When Firecrawl extraction fails for a discovered public post, use a **Hermes isolated browser fallback** once. If it returns a CAPTCHA, login wall, or timeout, stop rather than bypassing or retrying the control; record the outcome and do not summarize the post from its snippet.

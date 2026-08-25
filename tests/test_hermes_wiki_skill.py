@@ -189,6 +189,19 @@ def test_research_output_reference_contract():
         "재즈 갤러리",
         "메탈 마이너 갤러리",
         "게임음악 마이너 갤러리",
+        "해외 음악의 community priority",
+        "현지·국제 community",
+        "한국어권 comparison sample",
+        "Rate Your Music",
+        "Album of the Year user reviews/comments",
+        "Musicboard",
+        "Sputnikmusic",
+        "Punknews",
+        "Metal Archives",
+        "Jazz Music Archives",
+        "TalkClassical",
+        "KTT2",
+        "ATRL",
     ):
         assert rule in text
 
@@ -245,6 +258,19 @@ def test_skill_prioritizes_reviews_and_post_release_reporting():
         "메탈 마이너 갤러리",
         "게임음악 마이너 갤러리",
         "CAPTCHA, login wall, or timeout",
+        "foreign-music community priority",
+        "local/international community",
+        "Korean comparison sample",
+        "Rate Your Music",
+        "Album of the Year user reviews/comments",
+        "Musicboard",
+        "Sputnikmusic",
+        "Punknews",
+        "Metal Archives",
+        "Jazz Music Archives",
+        "TalkClassical",
+        "KTT2",
+        "ATRL",
     ):
         assert rule in text
 

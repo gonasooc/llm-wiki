@@ -1,7 +1,7 @@
 ---
 name: hermes-wiki
 description: Research YouTube and publish cited Obsidian drafts.
-version: 1.2.0
+version: 1.3.0
 author: gonasooc, Hermes Agent
 license: MIT
 platforms: [linux, macos, windows]
@@ -180,6 +180,15 @@ Search publicly accessible posts on Reddit, DCInside, HIPHOPLE, and other materi
   - **메탈·하드코어·펑크**: DCInside **메탈 마이너 갤러리**, work-relevant **포스트락 마이너 갤러리** or scene spaces, and public artist/venue communities.
   - **게임·애니·영상 음악**: DCInside **게임음악 마이너 갤러리** plus work/franchise-specific public communities.
   - **other genres**: broad Korean/international music communities plus public genre-specific spaces discovered from the work's scene, collaborators, or audience.
+- Apply **foreign-music community priority** whenever official release, artist, label, and scene context establish that the work's primary market is outside Korea. Use local/international community sources as the primary reception sample; Korean communities are a **Korean comparison sample** only when the work has material Korean release, fandom, touring, collaboration, media, or reception context. Do not let a Korean search result stand in for the work's overseas reception.
+  - **International cross-genre baseline**: directly readable **Rate Your Music** member reviews/comments, **Album of the Year user reviews/comments**, and **Musicboard** reviews/lists. Treat ratings, ranks, and aggregate scores as context only; summarize actual readable user prose separately from editorial reviews.
+  - **International pop / mainstream**: directly readable **ATRL** music album/single threads and work-relevant artist/fan forums discovered by query.
+  - **International hip-hop / R&B**: directly readable **KTT2** threads and work-relevant artist/label/scene forums; Reddit remains optional.
+  - **International indie / alternative / punk / hardcore**: **Sputnikmusic** user reviews, soundoffs, and directly readable album discussion; **Punknews** public discussion/comment threads; relevant scene, label, venue, and artist communities.
+  - **International metal**: **Metal Archives** user reviews, and work-relevant public metal scene communities.
+  - **International jazz / improvised music**: **Jazz Music Archives** user reviews/forums and directly readable performance, label, or scene discussions.
+  - **International classical**: **TalkClassical** work/recording threads and other directly readable specialist forums.
+  - **International electronic / dance**: the cross-genre baseline plus directly readable producer, label, festival, club, and regional scene communities discovered for the release; do not substitute chart metadata for discussion.
 - Run a broad community search, not a fixed three-site check: query exact and alternate artist/work/album/video names, Korean/original/romanized variants, collaborators, genre, and the release-period window across general music, genre, regional, fan, forum, and public comment communities. Reddit, DCInside, and HIPHOPLE are starting points, not the full source universe.
 - Record attempted, accessible, and unavailable platform/community spaces. Prefer materially distinct communities over many duplicate threads from one site. Continue discovery until information saturation; report the coverage boundary rather than claiming exhaustive coverage.
 - When Firecrawl extraction fails for a public candidate, use a Hermes isolated browser fallback to open and inspect that public page once. If it shows a CAPTCHA, login wall, or timeout, stop rather than bypassing or retrying the control; record the failure and do not summarize a search snippet as community evidence.
