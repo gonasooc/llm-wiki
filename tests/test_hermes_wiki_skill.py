@@ -275,6 +275,28 @@ def test_skill_prioritizes_reviews_and_post_release_reporting():
         assert rule in text
 
 
+def test_skill_uses_four_ordered_stages():
+    text = SKILL.read_text(encoding="utf-8")
+    markers = [
+        "Stage 1 — Discovery",
+        "Stage 2 — Evidence",
+        "Stage 3 — Synthesis",
+        "Stage 4 — QA (final quality gate)",
+    ]
+    positions = [text.index(m) for m in markers]
+    assert positions == sorted(positions), "the four stages must appear in order"
+    for rule in (
+        "Run the research as **four separated stages** in this order",
+        "Do not write claims yet",
+        "No Korean prose yet",
+        "every material claim has quoted ledger evidence",
+        "no stronger than the collected sample supports",
+        "final quality gate",
+        "Do not mix stages",
+    ):
+        assert rule in text
+
+
 def test_blog_output_reference_contract():
     assert BLOG_REFERENCE.exists()
     text = BLOG_REFERENCE.read_text(encoding="utf-8")
