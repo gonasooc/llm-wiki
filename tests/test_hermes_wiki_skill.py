@@ -291,6 +291,7 @@ def test_skill_uses_four_ordered_stages():
         "No Korean prose yet",
         "every material claim has quoted ledger evidence",
         "no stronger than the collected sample supports",
+        "Be token-frugal in the Discord thread",
         "final quality gate",
         "Do not mix stages",
     ):

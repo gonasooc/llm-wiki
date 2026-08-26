@@ -1,7 +1,7 @@
 ---
 name: hermes-wiki
 description: Research YouTube and publish cited Obsidian drafts.
-version: 1.4.0
+version: 1.4.1
 author: gonasooc, Hermes Agent
 license: MIT
 platforms: [linux, macos, windows]
@@ -169,11 +169,12 @@ Goal: write the Korean report from the evidence only.
   - **attributed interpretation** — a named source's reading.
   - **analysis** — Hermes's synthesis, labeled as analysis rather than fact.
 - Use inline numbered citations immediately after source-bearing sentences and render a final source list from the ledger. Mark a load-bearing claim that could not be verified as `[unverified]`. Do not invent citation numbers, URLs, quotes, timestamps, credits, release dates, chart positions, or relationships.
+- Publish in one bounded write. Draft the complete report once from the evidence, then proceed to QA; do not re-draft the whole report repeatedly to "polish it." Prefer a decisive first complete draft and, at most, one corrective edit driven by the QA gate. Repeated full rewrites consume tokens and time without changing the answer.
 - Keep editorial criticism, community reception, and aggregate scores separate. Report aggregate figures only as labeled context, with methodology and date when available.
 - Community reception: summarize a small platform-separated sample by platform. For each platform, identify recurring praise, criticism, interpretive disputes, and material minority views only to the extent the collected sample supports them. Do not claim the sample represents all listeners. State sample limitations: search visibility, ranking, moderation, language, time window, and platform demographics can bias the result. If a community conclusion would require more evidence than you collected, write that the sample is too thin instead of asserting the conclusion. Add a cited community analysis after the platform summaries, but do not generalize beyond the sample.
 - Do not reproduce full lyrics or long transcript passages. Use only short quotations needed for analysis, with timestamps when verified.
 
-Completion criterion: the report is written from evidence, facts/interpretation/analysis are separated, and every community synthesis is no stronger than the collected sample supports.
+Completion criterion: the report is written from evidence in one bounded draft, facts/interpretation/analysis are separated, and every community synthesis is no stronger than the collected sample supports.
 
 ### Stage 4 — QA (final quality gate)
 
@@ -217,6 +218,7 @@ The resulting note is a local draft, not an external publication. Publishing is 
 - Do not treat a vague mention of blogging as permission to create or update a vault file.
 - Do not force a community conclusion when the collected sample is too thin; write the sample limit instead.
 - Do not mix stages: discovery and synthesis in one pass creates unverifiable claims. Finish the evidence stage before writing prose.
+- Be token-frugal in the Discord thread. Use short commentary between tool phases; do not re-summarize retrieved pages or the whole session back into the thread. Re-extract a source only when a real gap exists, not to re-confirm what is already in the ledger.
 
 ## Verification
 
