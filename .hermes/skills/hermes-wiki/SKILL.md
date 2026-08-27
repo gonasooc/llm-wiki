@@ -1,7 +1,7 @@
 ---
 name: hermes-wiki
 description: Research YouTube and publish cited Obsidian drafts.
-version: 1.4.1
+version: 1.4.2
 author: gonasooc, Hermes Agent
 license: MIT
 platforms: [linux, macos, windows]
@@ -133,7 +133,8 @@ Goal: build the citation ledger with verbatim evidence quotes, and cross-check f
    ```text
    $HERMES_HOME/cache/citations/hermes-wiki/<thread-id>/<video-id>.json
    ```
-   Resolve an unset `HERMES_HOME` as `$HOME/.hermes` inside the `terminal` command. If thread metadata is unexpectedly unavailable, use `<session-id>/<video-id>.json` and state that fallback in the progress commentary.
+   `<video-id>` is the alphanumeric YouTube ID taken verbatim from the topic video URL (e.g. `Hsuy_xzPyWQ`), **never** the song/track name or a human-readable label. The folder and file names are the literal video ID — do not substitute the title. Resolve an unset `HERMES_HOME` as `$HOME/.hermes` inside the `terminal` command. If thread metadata is unexpectedly unavailable, use `<session-id>/<video-id>.json` and state that fallback in the progress commentary.
+   `--ledger` is accepted anywhere on the command line — you may place it after the subcommand (e.g. `add --ledger ...`) — so do not churn on ordering.
 
 2. Use this canonical workflow, replacing only validated identifiers and the helper path returned by `skill_view`. Build any command containing a retrieved URL, title, quote, or path through `execute_code` and its `shell_quote` helper; never interpolate raw retrieved text into a shell command.
    ```text
